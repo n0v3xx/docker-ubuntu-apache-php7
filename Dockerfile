@@ -11,7 +11,17 @@ RUN apt-get update && \
     apache2 \
     libapache2-mod-php7.0 \
     openssl \
-    mcrypt
+    mcrypt \
+    git \
+    unzip \
+    # for bz2 extension
+    libbz2-dev \
+    # for intl extension
+    libicu-dev \
+    # for mcrypt extension
+    libmcrypt-dev \
+    # for zip extension
+    libzip-dev
 
 # PHP
 RUN apt-get -y install curl \
@@ -28,7 +38,8 @@ RUN apt-get -y install curl \
     php-xmlrpc \
     php-memcached \
     php-xdebug \
-    php-intl
+    php-intl \
+    php-bz2
 
 # OPEN SSH
 RUN apt-get -y install openssh-server
