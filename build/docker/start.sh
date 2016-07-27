@@ -15,7 +15,6 @@ __run_php() {
     php -i
 }
 
-
 # Call all functions
 __run_supervisor
 __run_php
