@@ -27,4 +27,5 @@ PHP Packages:
 * php-xmlrpc \
 * php-memcached \
 * php-xdebug \ 
-* php-intl
+* php-intl \
+* php-bz2
